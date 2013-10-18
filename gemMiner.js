@@ -139,27 +139,9 @@ var config = {
 	diggers: 100,
 	diggerFindChance: 0.03,
 	dailyEventChance: 0.01,
-
-	rollGemValues: false,
+	rollGemValues: false
 };
 
 var eventNames = ["dwarf attack", "extra rich vein (roll extra day per digger)", "giant attack", "cave in", "cave monsters attack", "discovered natural cave", "found burried magic item",
 				"delivery cart is attacked"]
 
-var gemNames = {
-	lowest: ["banded agate", "moss agate", "eye agate", "blue quartz", "hematite", "lapis lazuli", "malachite", "obsidian", "rhodochrosite", "tiger eye turquoise", "irregular freshwater pearl" ],
-	low: ["bloodstone", "carnelian", "chalcedony", "chrysoprase", "citrine", "iolite", "jasper", "moonstone", "onyx", "peridot", "clear quartz", "sard", "sardonyx", "rose quartz", "smoky quartz", "star rose quartz", "zircon"],
-	middleLow: ["amber", "amethyst", "chrysoberyl", "coral", "red garnet", "brown-green garnet", "jade", "jet", "white pearl", "golden pearl", "pink pearl", "silver pearl", "red spinel", "red-brown, spinel", "deep green spinel", "tourmeline"],
-	middleHigh: ["alexandrite", "aquamarine", "violet garnet", "black pearl", "deep blue spinel", "golden yellow topaz"],
-	high: ["emerald", "white opal", "black opal", "fire opal", "blue sapphire", "fiery yellow corundum", "rich purple corundum", "blue star sapphire", "black star sapphire", "star ruby"],
-	highest: ["bright green emerald", "blue-white diamond", "canary diamond", "pink diamond", "brown diamond", "blue diamond", "jacinth"]
-};
-
-var gemValues = {
-	lowest: 	{ average: 10,		dice:4,	sides:4,	multiplier: 1	},
-	low: 		{ average: 50,		dice:2,	sides:4,	multiplier: 10 	},
-	middleLow : { average: 100, 	dice:4,	sides:4,	multiplier: 10 	},
-	middleHigh: { average: 500,		dice:2,	sides:4,	multiplier: 100	},
-	high: 		{ average: 1000,	dice:4,	sides:4,	multiplier: 100	},
-	highest: 	{ average: 5000,	dice:2,	sides:4,	multiplier: 1000}
-};
