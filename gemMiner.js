@@ -29,8 +29,8 @@ function getGemsForOneDay(){
 function newGem(){
 	var gem = {name: "coal", value:0 };
 	var category = getGemCategory();
-	gem.name = getNameOfGem(gemNames[category]);
-	gem.value = getValueOfGem(gemValues[category]);
+	gem.name = getNameOfGem(GemNames[category]);
+	gem.value = getValueOfGem(GemValues[category]);
 
 	return gem;
 }
@@ -38,17 +38,17 @@ function newGem(){
 function getGemCategory(){
 	gemsType = Math.random();
 	if(gemsType < .25)
-		return "lowest";
+		return "Lowest";
 	else if(gemsType < .5)
-		return "low";
+		return "Low";
 	else if(gemsType < .7)
-		return "middleLow";
+		return "MiddleLow";
 	else if(gemsType < .9)
-		return "middleHigh";
+		return "MiddleHigh";
 	else if(gemsType < .99)
-		return "high";
+		return "High";
 	else
-		return "highest";
+		return "Highest";
 }
 
 function getNameOfGem(gemlist){
