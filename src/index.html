@@ -10,14 +10,15 @@
     <script src="app.js"></script>
 	<script src="app/templates.js"></script>
     <script src="app/gem.js"></script>
-	<script src="app/gemMiner.js"></script>
+	<script src="app/gemRoller.js"></script>
+    <script src="app/gemUtil.js"></script>
 </head>
 <body>
     <script type="text/x-handlebars" data-template-name="application">
         <h1>Gem Miner</h1>
         <nav>
             {{#linkTo "index"}}Home{{/linkTo}}
-            {{#linkTo "simple"}}Simple Tool{{/linkTo}}
+            {{#linkTo "gemUtil"}}Gem-Roller Utility{{/linkTo}}
         </nav>
         {{outlet}}
     </script>

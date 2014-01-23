@@ -6,5 +6,5 @@ App.Store = DS.Store.extend({
 });
 
 App.Router.map(function(){
-   this.route("simple");
+   this.route("gemUtil");
 });
