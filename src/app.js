@@ -6,6 +6,5 @@ App.Store = DS.Store.extend({
 });
 
 App.Router.map(function(){
-   this.route("index");
    this.route("simple");
 });
