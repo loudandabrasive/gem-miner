@@ -25,3 +25,6 @@ gulp.task('templates', function(){
 gulp.task('default', function() {
 	gulp.run('vendor', 'scripts', 'templates');
 });
+
+gulp.watch('src/app/**/*.js', function() { gulp.run('scripts'); }); 
+gulp.watch('src/app/templates/**/*.hbs', function() { gulp.run('templates'); }); 
