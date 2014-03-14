@@ -7,4 +7,7 @@ App.Store = DS.Store.extend({
 
 App.Router.map(function(){
    this.route("gemUtil");
+	this.route("mine");
+	this.route("gems");
+	this.route("settings");
 });
