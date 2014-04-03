@@ -1,6 +1,6 @@
 App.GemsRoute = Ember.Route.extend({
 	model: function() {
-		 return App.Gem.find();
+		 return this.store.find("gem");
 	}
 });
 
