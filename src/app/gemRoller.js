@@ -3,24 +3,24 @@ function newGem(){
 	var category = getGemCategory();
 	gem.name = getNameOfGem(GemNames[category]);
 	gem.value = getValueOfGem(GemValues[category]);
-
+	gem.category = category;
 	return gem;
 }
 
 function getGemCategory(){
 	gemsType = Math.random();
 	if(gemsType < .25)
-		return "Lowest";
+		return GemCategory.Lowest;
 	else if(gemsType < .5)
-		return "Low";
+		return GemCategory.Low;
 	else if(gemsType < .7)
-		return "MiddleLow";
+		return GemCategory.MiddleLow;
 	else if(gemsType < .9)
-		return "MiddleHigh";
+		return GemCategory.MiddleHigh;
 	else if(gemsType < .99)
-		return "High";
+		return GemCategory.High;
 	else
-		return "Highest";
+		return GemCategory.Highest;
 }
 
 function getNameOfGem(gemlist){
