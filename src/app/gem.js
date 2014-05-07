@@ -1,9 +1,3 @@
-App.Gem = DS.Model.extend({
-    name:       DS.attr("string"),
-    category:   DS.attr("string"),
-    value:      DS.attr("int")
-});
-
 var GemCategory = {
     Lowest:     "Lowest",
     Low:        "Low",
@@ -30,23 +24,3 @@ var GemValues = {
     High: 		{ average: 1000,	dice:4,	sides:4,	multiplier: 100	},
     Highest: 	{ average: 5000,	dice:2,	sides:4,	multiplier: 1000}
 };
-
-App.Gem.FIXTURES = [
-    {
-        id: 	1
-        ,name:      "Bloodstone"
-        ,category:	GemCategory.Low
-        ,value:     50
-    },
-    {
-        id: 	2
-        ,name:      "White Opal"
-        ,category:	GemCategory.High
-        ,value:     1000
-    },{
-        id: 	3
-        ,name:      "Brown-Green Garnet"
-        ,category:	GemCategory.MiddleLow
-        ,value:     100
-    }
-];
