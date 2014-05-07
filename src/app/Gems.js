@@ -4,12 +4,12 @@ App.Gem = DS.Model.extend({
 	value:		DS.attr("number")
 });
 
-App.GemRoute = Ember.Route.extend({
+App.GemsRoute = Ember.Route.extend({
 	model: function() {
 		return this.get('store').find('gem');
 	}
 });
 
-App.GemController = Ember.ArrayController.extend({
+App.GemsController = Ember.ArrayController.extend({
 
 });
