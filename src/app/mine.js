@@ -26,6 +26,15 @@ App.MineController = Ember.ObjectController.extend({
 				record.save();
 			});
 		},
+
+		removeMiner: function(){
+			var store = this.get('store');
+			var globals = store.find('globals', 1).then(function(record){
+				var miners = record.get('miners');
+				record.set('miners', miners-1);
+				record.save();
+			});
+		},
 		
 		advanceMonth: function(){
 			
