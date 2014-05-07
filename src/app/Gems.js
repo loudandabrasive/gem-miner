@@ -1,7 +1,7 @@
 App.Gem = DS.Model.extend({
 	name:		DS.attr("string"),
 	category:	DS.attr("string"),
-	value:		DS.attr("int")
+	value:		DS.attr("number")
 });
 
 App.GemRoute = Ember.Route.extend({
