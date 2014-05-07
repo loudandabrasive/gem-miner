@@ -1,9 +1,9 @@
-App.GemsRoute = Ember.Route.extend({
+App.GemRoute = Ember.Route.extend({
 	model: function() {
-		 return this.store.find("gem");
+		 return this.get('store').find('gem');
 	}
 });
 
-App.GemsController = Ember.ArrayController.extend({
+App.GemController = Ember.ArrayController.extend({
 
 });

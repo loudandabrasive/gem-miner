@@ -10,15 +10,21 @@
 		<th>Total</th>
 	</tr></thead>
 	<tbody>
-		{{#each}}
-		<tr>
-			<td>Sell</td>
-			<td>{{name}}</td>
-			<td>{{category}}</td>
-			<td>{{value}}</td>
-			<td>1</td>
-			<td>1</td>
-		</tr>
-		{{/each}}
+		{{#if model}}
+			{{#each}}
+			<tr>
+				<td>Sell</td>
+				<td>{{name}}</td>
+				<td>{{category}}</td>
+				<td>{{value}}</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			{{/each}}
+		{{else}}
+			<tr>
+				<td colspan=6>No gems!</td>
+			</tr>
+		{{/if}}
 	</tbody>
 </table>
