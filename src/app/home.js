@@ -5,7 +5,11 @@ App.Globals = DS.Model.extend({
 
 	costPerMiner:		DS.attr("number"),
 	upkeepFlatRate:		DS.attr("number"),
-	chanceToFindGem:	DS.attr("number")
+	chanceToFindGem:	DS.attr("number"),
+
+	totalUpkeep: function(){
+		return((this.get('miners')* this.get('costPerMiner')) + this.get('upkeepFlatRate'));
+	}.property('miners', 'costPerMiner', 'upkeepFlatRate')
 });
 
 App.IndexRoute = Ember.Route.extend({
